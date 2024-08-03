@@ -6,8 +6,7 @@ import io.qameta.allure.Step;
 import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.byTagAndText;
-import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverConditions.currentFrameUrl;
 
@@ -15,7 +14,6 @@ public class DuolingoPage {
 
     private final SelenideElement
             greetingTitle = $(".L93Ok"),
-            cookiesButton = $(byText("Accept cookies")),
             careersButton = $("a[href='https://careers.duolingo.com']"),
             careersTitle = $(byTagAndText("h1", "work at duolingo")),
             typeSelect =$(byTagAndText("option", "All types")),
@@ -38,13 +36,7 @@ public class DuolingoPage {
 
     @Step("Open main page")
     public DuolingoPage openMainPage() {
-        open("https://www.duolingo.com/");
-        return this;
-    }
-
-    @Step("Accept cookies")
-    public DuolingoPage acceptCookies() {
-        cookiesButton.click();
+        open("https://duolingo.com/");
         return this;
     }
 
@@ -56,7 +48,7 @@ public class DuolingoPage {
 
     @Step("Open careers page")
     public DuolingoPage goToCareersPage() {
-        careersButton.click();
+        careersButton.scrollIntoView(true).click();
         return this;
     }
 
@@ -73,7 +65,7 @@ public class DuolingoPage {
 
     @Step("Open contact page")
     public DuolingoPage goToContactPage() {
-        contactsButton.click();
+        contactsButton.scrollIntoView(true).click();
         return this;
     }
 
@@ -89,7 +81,7 @@ public class DuolingoPage {
 
     @Step("Open store page")
     public DuolingoPage goToStorePage() {
-        storeButton.click();
+        storeButton.scrollIntoView(true).click();
         return this;
     }
 
