@@ -14,7 +14,7 @@ public class DuolingoPage {
 
     private final SelenideElement
             greetingTitle = $(".L93Ok"),
-            cookiesButton = $(byTagAndText("button", "Accept cookies")),
+            cookiesButton = $(byTagAndText("span", "Accept cookies")),
             careersButton = $("a[href='https://careers.duolingo.com']"),
             careersTitle = $(byTagAndText("h1", "work at duolingo")),
             typeSelect =$(byTagAndText("option", "All types")),
