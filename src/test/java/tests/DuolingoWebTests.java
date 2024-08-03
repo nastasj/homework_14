@@ -31,6 +31,7 @@ public class DuolingoWebTests extends TestBase {
     public void checkCareersPageTest() {
         duolingoPage
                 .openMainPage()
+                .acceptCookies()
                 .goToCareersPage()
                 .checkCareersPage();
     }
@@ -40,6 +41,7 @@ public class DuolingoWebTests extends TestBase {
     public void checkContactPageTest() {
         duolingoPage
                 .openMainPage()
+                .acceptCookies()
                 .goToContactPage()
                 .checkContactPage();
     }
@@ -49,6 +51,7 @@ public class DuolingoWebTests extends TestBase {
     public void checkStorePageTest() {
         duolingoPage
                 .openMainPage()
+                .acceptCookies()
                 .goToStorePage()
                 .checkStorePage();
     }
@@ -58,6 +61,7 @@ public class DuolingoWebTests extends TestBase {
     public void checkRegisterPageTest() {
         duolingoPage
                 .openMainPage()
+                .acceptCookies()
                 .goToRegisterPage()
                 .checkRegisterPage();
     }
