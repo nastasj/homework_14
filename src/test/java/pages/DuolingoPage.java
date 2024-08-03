@@ -103,6 +103,7 @@ public class DuolingoPage {
     @Step("Check register page")
     public DuolingoPage checkRegisterPage() {
         String registerPageUrl = "https://www.duolingo.com/register";
+        String lessonPageUrl = "https://www.duolingo.com/lesson";
         int timeOutLimit = 10;
         webdriver().shouldHave(currentFrameUrl(registerPageUrl));
         languageCard.click();
@@ -122,7 +123,6 @@ public class DuolingoPage {
         continueButton.shouldBe(clickable, Duration.ofSeconds(timeOutLimit)).click();
         continueButton.shouldBe(clickable, Duration.ofSeconds(timeOutLimit)).click();
         continueButton.shouldBe(clickable, Duration.ofSeconds(timeOutLimit)).click();
-        String lessonPageUrl = "https://www.duolingo.com/lesson";
         webdriver().shouldHave(currentFrameUrl(lessonPageUrl));
         return this;
     }
