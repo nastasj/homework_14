@@ -14,7 +14,7 @@ public class DuolingoPage {
 
     private final SelenideElement
             greetingTitle = $(".L93Ok"),
-            cookieButton = $("[id=onetrust-group-container]"),
+            cookiesButton = $(byTagAndText("button", "Accept cookies")),
             careersButton = $("a[href='https://careers.duolingo.com']"),
             careersTitle = $(byTagAndText("h1", "work at duolingo")),
             typeSelect =$(byTagAndText("option", "All types")),
@@ -43,7 +43,7 @@ public class DuolingoPage {
 
     @Step("Accept cookies")
     public DuolingoPage acceptCookies() {
-        cookieButton.click();
+        cookiesButton.click();
         return this;
     }
 
