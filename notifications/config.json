@@ -1,11 +1,11 @@
 {
   "base": {
     "logo": "",
-    "project": "qa guru notification tests",
+    "project": "duolingo notification tests",
     "environment": "",
     "comment": "",
     "reportLink": "",
-    "language": "ru",
+    "language": "en",
     "allureFolder": "allure-report",
     "enableChart": true
   },
