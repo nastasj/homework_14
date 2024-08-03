@@ -81,13 +81,13 @@ To start the build:
 After the build is completed the icon [<img width="2%" title="IntelliJ IDEA" src="media/icons/Allure_Report.svg"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-unit14_duolingo_tests/allure/), is displayed in ```История сборок```/```Build History```.
 When clicking on the icon, a page with a generated html report and test documentation opens.
 ### *Main report page*
-[<img width="50%" title="Allure Report" src="media/img/Allure_Overview.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-unit14_duolingo_tests/allure/)
+[<img width="80%" title="Allure Report" src="media/img/Allure_Overview.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-unit14_duolingo_tests/allure/)
 
 ### *Test cases*
-[<img width="50%" title="Allure Report" src="media/img/Allure_Suites.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-unit14_duolingo_tests/allure/#suites)
+[<img width="80%" title="Allure Report" src="media/img/Allure_Suites.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-unit14_duolingo_tests/allure/#suites)
 
 ### *Graphs*
-[<img width="50%" title="Allure Report" src="media/img/Allure_Graphs.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-unit14_duolingo_tests/allure/#graph)
+[<img width="80%" title="Allure Report" src="media/img/Allure_Graphs.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-unit14_duolingo_tests/allure/#graph)
 
 
 
@@ -97,4 +97,4 @@ When clicking on the icon, a page with a generated html report and test document
 In Allure reports, each test is accompanied by not only a screenshot, but also a video of the test execution.
 For example:
 
-[<img width="30%" title="Test Run Gif" src="media/img/Test_Video.gif">]()
+[<img width="80%" title="Test Run Gif" src="media/img/Test_Video.gif">]()
