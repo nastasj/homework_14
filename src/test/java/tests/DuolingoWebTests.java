@@ -20,7 +20,7 @@ public class DuolingoWebTests extends TestBase {
             "https://en.duolingo.com/ | The free, fun, and effective way to learn a language!",
             "https://de.duolingo.com/ | Effektiv und kostenlos eine Sprache lernen – und dabei Spaß haben!",
     }, delimiter = '|')
-    @ParameterizedTest(name = "When opening  site {0} welcome message {1} should be displayed")
+    @ParameterizedTest(name = "When opening site {0} welcome message {1} should be displayed")
     void checkDisplayCorrectGreeting(String url, String greeting) {
         open(url);
         duolingoPage.checkGreeting(greeting);
