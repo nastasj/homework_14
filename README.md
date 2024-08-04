@@ -1,4 +1,4 @@
-# Automation project for Duolingo.com [<img width="10%" title="Duolingo" src="media/icons/Duolingo.svg"/>](https://bercut.com/)
+# Automation project for [Duolingo.com](https://www.duolingo.com/) [<img width="10%" title="Duolingo" src="media/icons/Duolingo.svg"/>](https://www.duolingo.com/)
 >With more than 500 million learners, Duolingo has the world's largest collection of language-learning data at its fingertips. This allows us to build unique systems, uncover new insights about the nature of language and learning, and apply existing theories at scales never before seen.
 
 ## :scroll: Table of contents
@@ -44,7 +44,7 @@ Allure report:
 - Check contact page
 - Check store page
 
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/icons/Jenkins.svg"> Jenkins build
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/icons/Jenkins.svg"> [Jenkins build](https://jenkins.autotests.cloud/job/027-wqmnzx-unit14_duolingo_tests/)
 [<img width="50%" title="Jenkins" src="media/img/Jenkins.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-unit14_duolingo_tests/)
 
 ### *Jenkins build options:*
@@ -62,7 +62,22 @@ Allure report:
 ```bash
 gradle clean duolingo
 ```
-When running this command in the IDE terminal, the tests run remotely in <code>Selenoid</code>.
+When running this command in the IDE terminal, the tests run remotely in <code>Selenoid</code> by default.
+
+```bash
+gradle clean duolingo -DisRemote=false
+```
+When running this command in the IDE terminal, the tests run on the local machine.
+
+```bash
+gradle clean smoke
+```
+When running this command in the IDE terminal, only tests with teg <code>smoke</code> run.
+
+```bash
+gradle clean regress
+```
+When running this command in the IDE terminal, only tests with teg <code>regress</code> run.
 
 ***Via Jenkins:***
 ```java
@@ -77,7 +92,7 @@ To start the build:
 2. Click on ```Собрать с параметрами```/```Build with parameters```
 3. Click on ```Собрать```/```Build```
 
-## <img width="4%" style="vertical-align:middle" title="Allure_Report" src="media/icons/Allure_Report.svg"> Allure report
+## <img width="4%" style="vertical-align:middle" title="Allure_Report" src="media/icons/Allure_Report.svg"> [Allure report](https://jenkins.autotests.cloud/job/027-wqmnzx-unit14_duolingo_tests/allure/)
 After the build is completed the icon [<img width="2%" title="IntelliJ IDEA" src="media/icons/Allure_Report.svg"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-unit14_duolingo_tests/allure/), is displayed in ```История сборок```/```Build History```.
 When clicking on the icon, a page with a generated html report and test documentation opens.
 ### *Main report page*
