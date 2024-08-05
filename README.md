@@ -6,6 +6,7 @@
 - [Automated tests](#ballot_box_with_check-automated-tests)
 - [Jenkins build](#-jenkins-build)
 - [Allure report](#-allure-report)
+- [Telegram notifications](#-telegram-notifications)
 - [Test execution in Selenoid](#-test-execution-in-selenoid)
 
 ## :computer: Technology stack
@@ -48,7 +49,7 @@ Allure report:
 [<img width="50%" title="Jenkins" src="media/img/Jenkins.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-unit14_duolingo_tests/)
 
 ### *Jenkins build options:*
-```TASK``` - task name (possible option - ```duolingo```)
+```TASK``` - task name (possible options - ```duolingo```, ```smoke```, ```regress```)
 ```BROWSER``` - browser for running tests (default - ```chrome```)  
 ```BROWSER_VERSION``` - browser version (default - ```122```)  
 ```BROWSE_SIZE``` - browser window size (default - ```1920x1080```)
@@ -104,10 +105,13 @@ When clicking on the icon, a page with a generated html report and test document
 ### *Graphs*
 [<img width="80%" title="Allure Report" src="media/img/Allure_Graphs.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-unit14_duolingo_tests/allure/#graph)
 
+## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/icons/Telegram.svg"> Уведомления в Telegram
 
+After the build is completed, a special bot created in ```Telegram``` automatically processes and sends a message with a test run report.
+
+[<img width="60%" title="Telegram Notifications" src="media/img/Telegram_Notification.PNG">]()
 
 ## <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/icons/Selenoid.svg"> Test execution in Selenoid
-
 
 In Allure reports, each test is accompanied by not only a screenshot, but also a video of the test execution.
 For example:
