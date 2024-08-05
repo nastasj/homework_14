@@ -20,6 +20,7 @@
 <a href="https://junit.org/junit5/"><img width="6%" title="JUnit5" src="media/icons/JUnit5.svg"/></a> 
 <a href="https://github.com/"><img width="6%" title="GitHub" src="media/icons/GitHub.svg"/></a> 
 <a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="media/icons/Jenkins.svg"/></a>
+<a href="https://telegram.org/"><img width="6%" title="Telegram" src="media/icons/Telegram.svg"/></a> 
 </p>
 
 Automated tests:
