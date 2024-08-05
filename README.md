@@ -105,7 +105,7 @@ When clicking on the icon, a page with a generated html report and test document
 ### *Graphs*
 [<img width="80%" title="Allure Report" src="media/img/Allure_Graphs.PNG"/>](https://jenkins.autotests.cloud/job/027-wqmnzx-unit14_duolingo_tests/allure/#graph)
 
-## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/icons/Telegram.svg"> Уведомления в Telegram
+## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/icons/Telegram.svg"> Telegram notifications
 
 After the build is completed, a special bot created in ```Telegram``` automatically processes and sends a message with a test run report.
 
